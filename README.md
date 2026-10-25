@@ -43,6 +43,8 @@ The first time, sign in to Aldus: in Claude Code, run `/mcp`, choose the Aldus s
 
 You need an Aldus account with the studio. [Start here](https://askaldus.com/start).
 
+Books run in Aldus need nothing more. A book run on your own Mac (the earlier "Run on my Mac" pairing) sets its print pages with Matenadar, Aldus's layout engine, which that Mac needs installed: build it and put `matenadar` on your path, or set `MATENADAR_BIN`. The runner says when it's missing.
+
 ## Privacy and support
 
 - [Privacy policy](https://askaldus.com/privacy)
