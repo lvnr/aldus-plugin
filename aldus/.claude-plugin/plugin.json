@@ -1,0 +1,20 @@
+{
+  "name": "aldus",
+  "displayName": "Aldus",
+  "version": "1.2.0",
+  "description": "Work on your Aldus books with your own Claude: start new books, do Aldus's work on any of them in each book's own machine in Aldus, look at the pages as you make them, and review them with Aldus's reviewers.",
+  "author": {
+    "name": "Kelyan, LLC",
+    "email": "support@askaldus.com",
+    "url": "https://askaldus.com"
+  },
+  "homepage": "https://askaldus.com",
+  "repository": "https://github.com/lvnr/aldus-plugin",
+  "license": "SEE LICENSE IN LICENSE",
+  "icon": "./logo.png",
+  "documentationUrl": "https://github.com/lvnr/aldus-plugin#readme",
+  "supportUrl": "https://github.com/lvnr/aldus-plugin/issues",
+  "privacyPolicyUrl": "https://askaldus.com/privacy",
+  "termsOfServiceUrl": "https://askaldus.com/terms",
+  "keywords": ["books", "publishing", "self-publishing", "kdp", "typesetting"]
+}

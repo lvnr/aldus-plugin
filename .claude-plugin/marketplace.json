@@ -1,0 +1,17 @@
+{
+  "name": "aldus",
+  "owner": {
+    "name": "Aldus",
+    "url": "https://askaldus.com"
+  },
+  "metadata": {
+    "description": "Aldus, the publishing studio, for your own Claude."
+  },
+  "plugins": [
+    {
+      "name": "aldus",
+      "source": "./aldus",
+      "description": "Work on your Aldus books with your own Claude: start new books, do Aldus's work on any of them in each book's own machine in Aldus, look at the pages as you make them, and review them with Aldus's reviewers."
+    }
+  ]
+}

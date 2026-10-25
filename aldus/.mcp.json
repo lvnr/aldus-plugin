@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "aldus": {
+      "type": "http",
+      "url": "https://askaldus.com/api/mcp",
+      "timeout": 180000
+    }
+  }
+}
