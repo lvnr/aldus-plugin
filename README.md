@@ -18,7 +18,12 @@ Each book lives in Aldus, in a machine of its own: its files, its tools and its 
   - `aldus:natural-reader`: a first reading of the text;
   - `aldus:production-proofreader`: the final release files.
 
-  Each reviewer reads the book and never changes it.
+  Each reviewer reads the book and changes nothing but its own report.
+- **Three roles** that Aldus's procedures hand work to:
+  - `aldus:writer`: the creative owner of the drafting;
+  - `aldus:editor`: a fresh editorial pass;
+  - `aldus:researcher`: a fresh research context.
+- **Aldus's procedures among Claude's skills**: one pointer per procedure, so Claude reads each from Aldus before the step it covers. The procedures and the roles' instructions themselves are served by the connector, not kept in this plugin.
 
 ## Install
 
