@@ -16,7 +16,7 @@ The brief you are given names the book, its reader and trim, the files, and the 
 When the brief asks you to review a print interior made with the layout engine:
 
 1. Read `get_procedure design-book-interior`, sections 3, 4 and 9. Section 3 lists the pages to open, and section 4 gives the criteria. Then add three spreads of your own choosing from the middle of the book.
-2. Open every page on the list at 150 dpi (`proofs/pages/`, `proofs/spreads/`). For letterfit, punctuation or a grid's letters, open the page cropped, or ask for it at 300 dpi with `run_book_tool aldus_layout_render` (pages and dpi). Run `run_book_tool aldus_layout_check` and open each page it names.
+2. Open every page on the list at 200 dpi (`proofs/pages/`, `proofs/spreads/`). For letterfit, punctuation or a grid's letters, open the page cropped, or ask for it at 300 dpi with `run_book_tool aldus_layout_render` (pages and dpi). Run `run_book_tool aldus_layout_check` and open each page it names.
 3. Judge the pages as a reader and as a book designer would. Pass only pages you would put beside the best-made books in the category. Correct is not enough: a generic or template-like interior fails, with that reason.
 4. Write `design/interior-review.md` with `write_file`. It holds the verdict (passed, or failed) and, when it fails, numbered fixes: the page, what is wrong, why it matters to the reader, and the change you suggest.
 5. Register the review with `run_book_tool aldus_review_register`, these inside its `review` argument:
