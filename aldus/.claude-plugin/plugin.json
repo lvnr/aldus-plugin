@@ -1,7 +1,7 @@
 {
   "name": "aldus",
   "displayName": "Aldus",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Work on your Aldus books with your own Claude: start new books, do Aldus's work on any of them in each book's own machine in Aldus, look at the pages as you make them, and review them with Aldus's reviewers.",
   "author": {
     "name": "Kelyan, LLC",
