@@ -1,8 +1,8 @@
 {
   "name": "aldus",
   "displayName": "Aldus",
-  "version": "1.7.0",
-  "description": "Work on your Aldus books with your own Claude: start new books, do Aldus's work on any of them in each book's own machine in Aldus, look at the pages as you make them, and review them with Aldus's reviewers.",
+  "version": "1.8.0",
+  "description": "Work on your Aldus books with your own Claude: start new books, do Aldus's work on any of them in each book's own machine in Aldus, look at the pages as you make them, review them with Aldus's reviewers, and make their social posts from your shared personas and characters.",
   "author": {
     "name": "Kelyan, LLC",
     "email": "support@askaldus.com",

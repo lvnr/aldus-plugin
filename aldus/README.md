@@ -6,12 +6,14 @@ Each book lives in Aldus, in a machine of its own: its files, its tools and its 
 
 ## What it adds
 
-- **`/aldus`**: work on your books. Name a book and what to do (`/aldus write the pilot for The Salt Road`), or start a new one (`/aldus start a picture book about two lighthouse keepers' children`).
+- **`/aldus`**: work on your books. Name a book and what to do (`/aldus write the pilot for The Salt Road`), start a new one (`/aldus start a picture book about two lighthouse keepers' children`), or ask for its social posts (`/aldus make a week of TikToks for The Salt Road`).
 - **The Aldus connector** (`https://askaldus.com/api/mcp`), which lets Claude:
   - read your books and their parts;
   - start new books;
   - start, take and finish Aldus's work on any of your books;
   - run commands, edit files and look at rendered pages in the book's own machine;
+  - design a book's print pages with Aldus's layout engine, looking at every page it makes;
+  - make a book's social posts (short videos, podcast and presenter clips, carousels, pins) and the personas and characters they're cast from, shared by all your books;
   - ask you questions through Aldus.
 - **Three reviewers**, each a fresh, independent look:
   - `aldus:page-critic`: the rendered pages;

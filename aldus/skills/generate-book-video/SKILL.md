@@ -1,6 +1,6 @@
 ---
 name: generate-book-video
-description: "Aldus procedure, for work on an Aldus book: Design a first-frame image, then create book videos through the Higgsfield API. Use for Amazon ads, TikTok, social, trailers or video edits, including optional desk-flip, A+ animation and casual UGC concepts. 5, 720p, 12 seconds with audio."
+description: "Aldus procedure, for work on an Aldus book: Design a first-frame image, then create a bespoke book video through the Higgsfield API: an Amazon video advert, a trailer, an edit of the author's own footage, or a named desk-flip, A+ animation or UGC concept that Aldus's Social formats don't make."
 user-invocable: false
 ---
 
