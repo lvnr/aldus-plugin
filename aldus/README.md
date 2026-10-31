@@ -65,7 +65,7 @@ The first time, sign in to Aldus: in Claude Code, run `/mcp`, choose the Aldus s
 
 You need an Aldus account with the studio. [Start here](https://askaldus.com/start).
 
-Books run in Aldus need nothing more. A book run on your own Mac (the earlier "Run on my Mac" pairing) sets its print pages with Matenadar, Aldus's layout engine, which that Mac needs installed: build it and put `matenadar` on your path, or set `MATENADAR_BIN`. The runner says when it's missing.
+Books run in Aldus need nothing more.
 
 When your books run with Claude and you start work in Aldus while Claude Code isn't open, Aldus runs the lighter work itself and keeps the pilot and the writing for you: type `/aldus take the job` to take it. With **Let Aldus start my Claude for queued work** ticked in Aldus's Connections, Aldus starts it for you instead: your Claude routine, or a Mac paired with Aldus, which starts Claude Code (or Codex) in the background with this plugin and only Aldus's tools. That counts against your plan's usage, and needs this plugin signed in to Aldus.
 

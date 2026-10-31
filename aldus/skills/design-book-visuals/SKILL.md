@@ -1,6 +1,6 @@
 ---
 name: design-book-visuals
-description: "Aldus procedure, for work on an Aldus book: Design the visual approach for a book or a bounded visual feature using the session's image route, from selective nonfiction/fiction illustrations to complete illustrated pages."
+description: "Aldus procedure, for work on an Aldus book: Decide a book's interior pictures: what its kind and picture program ask for, which pictures go where and when each is made, the look locked during the pilot, and the plan kept as entries Aldus and the author can see and change."
 user-invocable: false
 ---
 

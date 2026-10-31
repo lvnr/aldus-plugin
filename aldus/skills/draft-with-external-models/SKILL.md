@@ -1,6 +1,6 @@
 ---
 name: draft-with-external-models
-description: "Aldus procedure, for work on an Aldus book: Generate, compare, and selectively adopt independent prose candidates from another model (a fresh subagent of the session's own harness, or OpenRouter when the workspace provides its key) while the current session remains the Aldus orchestrator."
+description: "Aldus procedure, for work on an Aldus book: Generate, compare, and selectively adopt independent prose candidates from another model (a fresh subagent of the session's own harness, or one of Aldus's own models through the engine's draft route) while the current session remains the Aldus orchestrato…"
 user-invocable: false
 ---
 

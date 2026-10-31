@@ -1,6 +1,6 @@
 ---
 name: generate-book-visuals
-description: "Aldus procedure, for work on an Aldus book: Create and inspect native-generated book imagery from cleared references and frozen visual canon through isolated fresh generator contexts and a provenance-recorded attempt loop."
+description: "Aldus procedure, for work on an Aldus book: Make a book's interior pictures from its picture plan: Aldus's pictures pipeline compiles each prompt by code, makes one image per request in the program's model, checks it by machine, has a fresh critic judge it, and stops at three attempts before the au…"
 ---
 
 # generate-book-visuals
