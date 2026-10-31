@@ -67,7 +67,7 @@ You need an Aldus account with the studio. [Start here](https://askaldus.com/sta
 
 Books run in Aldus need nothing more.
 
-When your books run with Claude and you start work in Aldus while Claude Code isn't open, Aldus runs the lighter work itself and keeps the pilot and the writing for you: type `/aldus take the job` to take it. With **Let Aldus start my Claude for queued work** ticked in Aldus's Connections, Aldus starts it for you instead: your Claude routine, or a Mac paired with Aldus, which starts Claude Code (or Codex) in the background with this plugin and only Aldus's tools. That counts against your plan's usage, and needs this plugin signed in to Aldus.
+When your books run with Claude and you start work in Aldus while Claude Code isn't open, Aldus runs the lighter work itself and keeps the pilot and the writing for you: type `/aldus take the job` to take it. With **Let Aldus start my Claude for queued work** ticked in Aldus's Connections, Aldus starts your Claude routine for it instead. That counts against your plan's usage.
 
 ## Privacy and support
 
