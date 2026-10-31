@@ -1,6 +1,6 @@
 ---
 name: design-book-cover
-description: "Aldus procedure, for work on an Aldus book: Research current category covers and the author's own references, then run a five-direction typography-inclusive front-cover campaign of considerably different ideas in isolated fresh image-generation contexts."
+description: "Aldus procedure, for work on an Aldus book: Research current category covers and the author's own references, then write considerably different directions as cover ideas the author can edit (five by default, or as many as asked; ideas alone when that is all the goal asks) and run them as a typograp…"
 user-invocable: false
 ---
 

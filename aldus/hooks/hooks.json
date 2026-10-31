@@ -1,0 +1,42 @@
+{
+  "description": "Aldus: at the session's first prompt, tells it what waits for it, and while autopilot is on hands over the next job when a turn ends (at most 8 in a row). Both ask the Aldus connector; nothing runs on this computer.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:aldus:aldus",
+            "tool": "waiting_work",
+            "input": {
+              "hook": "true",
+              "event": "UserPromptSubmit",
+              "session_id": "${session_id}"
+            },
+            "timeout": 20,
+            "statusMessage": "Asking Aldus what waits",
+            "once": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:aldus:aldus",
+            "tool": "next_job",
+            "input": {
+              "hook": "true",
+              "session_id": "${session_id}",
+              "stop_hook_active": "${stop_hook_active}"
+            },
+            "timeout": 30,
+            "statusMessage": "Asking Aldus for the next job"
+          }
+        ]
+      }
+    ]
+  }
+}

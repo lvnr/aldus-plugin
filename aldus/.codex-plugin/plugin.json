@@ -1,0 +1,25 @@
+{
+  "name": "aldus",
+  "version": "1.9.0",
+  "description": "Work on your Aldus books with your own Codex: start new books, do Aldus's work on any of them in each book's own machine in Aldus, look at the pages as you make them, review them with Aldus's reviewers, and make their social posts.",
+  "keywords": [
+    "books",
+    "publishing",
+    "self-publishing",
+    "kdp",
+    "typesetting"
+  ],
+  "skills": "./codex/skills/",
+  "mcpServers": "./codex.mcp.json",
+  "hooks": "./codex/hooks.json",
+  "interface": {
+    "displayName": "Aldus",
+    "shortDescription": "Your publishing studio",
+    "developerName": "Kelyan, LLC",
+    "category": "Productivity",
+    "websiteURL": "https://askaldus.com",
+    "privacyPolicyURL": "https://askaldus.com/privacy",
+    "termsOfServiceURL": "https://askaldus.com/terms",
+    "logo": "./logo.png"
+  }
+}
