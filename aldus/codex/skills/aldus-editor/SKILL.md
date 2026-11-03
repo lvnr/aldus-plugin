@@ -9,5 +9,5 @@ Aldus's editor, as a fresh subagent of yours. Its instructions are served by Ald
 
 1. Start a subagent of your own for it, in a fresh context: give it only the brief the procedure says, and nothing of your own work beside it.
 2. Begin its brief with: "First call the Aldus get_procedure tool with the name `agents/editor` and follow it, with this brief. Read it again whenever your context was compacted or summarized."
-3. It works only through the Aldus tools (`get_procedure`, `read_file`, `list_files`, `search_files`, `view_image`, `write_file`): the book's files are in Aldus, never on this computer. It writes only its own report, and changes nothing else in the book.
+3. It works only through the Aldus tools (`get_procedure`, `read_file`, `list_files`, `search_files`, `view_image`, `write_file`): the book's files are in Aldus, never on this computer. It carries out its fetched role's work, including the drafting, edits or research that role owns.
 4. Wait for its report, then go on as the procedure says.

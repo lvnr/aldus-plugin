@@ -27,7 +27,7 @@ When the brief asks you to review a print interior made with the layout engine:
    - `reviewers` `["fresh interior reviewer"]`;
    - a short summary.
 
-   `describe_book_tool review_register` gives its exact arguments. It is Design's review, apart from the print proof Publish reviews.
+   `describe_book_tool review_register` gives its exact arguments. It is Design's review, apart from the print proof Package reviews.
 
 ## Any other pages
 

@@ -50,7 +50,7 @@ In Claude on the web or the desktop, open **Customize → Plugins** and add this
 
 ### Codex
 
-The same repository carries a Codex add-on: the connector with Codex's own tool timeout, the skills in Codex's wording (type `$aldus`), the six reviewers and roles as skills (Codex plugins can't ship agents), and Codex hooks.
+The same repository carries a Codex add-on (no separate plugin is needed): the connector with Codex's own tool timeout, the skills in Codex's wording (type `$aldus`), the six reviewers and roles as skills (Codex plugins can't ship agents), and Codex hooks.
 
 ```
 codex plugin marketplace add lvnr/aldus-plugin
@@ -58,6 +58,10 @@ codex plugin add aldus@aldus
 ```
 
 Then sign in when Codex asks, or run `codex mcp login aldus`. Review and trust the plugin's hooks with `/hooks`. In the IDE extension, which has no plugins, add the connector with `codex mcp add aldus --url https://askaldus.com/api/mcp` and set `tool_timeout_sec = 180` for it.
+
+When the current Codex host exposes native image generation, ask it to use that route for an Aldus book, or invoke `$generate-native-image`. It reads the current Aldus procedure, generates candidates with the host’s image tool, then sends only the new image and its provenance to Aldus. Generated candidates still need independent review, rights and print checks before use. Claude uses Aldus’s configured image service. Native generation availability depends on the host and account; a Codex plugin cannot enable a missing image tool.
+
+This package is distributed through the repository and Aldus’s download. Its optional lifecycle hooks require a desktop runtime and trust review; a public-directory submission needs a hooks-free package.
 
 ## Sign in
 
