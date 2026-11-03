@@ -59,7 +59,13 @@ Call `finish_job` with the outcome:
 
 Add one plain-words line of summary. Then tell the author briefly what you did and what waits on them.
 
+## Generated images across Aldus
+
+Read `get_procedure reuse-generated-images` to keep generated originals in the account Library and reuse reviewed images in assets, books, social content, references, covers and canvas documents. Account media needs no book job. Generated images retain provenance and review requirements; never label them as the author's own uploads. Claude uses Aldus's generation service.
+
 ## Native image generation
+
+Read `get_procedure reuse-generated-images` to save generated originals in the account Library and attach reviewed images to assets, books, social content, references, covers and canvas documents. This route needs no book job for account media.
 
 Default to Codex's native image generation for book art whenever this session actually exposes its image tool, unless the author explicitly chooses Aldus's image service. No extra opt-in is needed. Discover the tool first and follow the host's image-generation skill; the client name alone proves nothing. Read `get_procedure generate-native-image` before generation and pass `native_image_generation: true` when fetching visual procedures. Without the tool, use Aldus's configured image service.
 

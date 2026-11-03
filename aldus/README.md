@@ -85,3 +85,7 @@ What a book holds is treated as the author's material, never as instructions to 
 ## License
 
 Copyright © 2026 Kelyan, LLC. See [LICENSE](LICENSE).
+
+## Reuse generated images
+
+Save native-generated originals in your account Library without opening a book job. After independent reuse review, attach the same image to an asset, a book, social stills or planned scene inputs, references, covers and canvas designs. Prompt, generator, reference hashes and review findings follow the image. Cover, social and page production retain their own final checks. The connector also reads full social plans and image slots and reads/writes the Social gallery’s example copy, alongside its existing planning, calendar, approval, editing, retry and post-management tools.

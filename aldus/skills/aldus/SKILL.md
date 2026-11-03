@@ -59,3 +59,7 @@ Call `finish_job` with the outcome:
 - `blocked`, when you can't go on (say why).
 
 Add one plain-words line of summary. Then tell the author briefly what you did and what waits on them.
+
+## Generated images across Aldus
+
+Read `get_procedure reuse-generated-images` to keep generated originals in the account Library and reuse reviewed images in assets, books, social content, references, covers and canvas documents. Account media needs no book job. Generated images retain provenance and review requirements; never label them as the author's own uploads. Claude uses Aldus's generation service.
