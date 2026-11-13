@@ -6,7 +6,7 @@ Each book lives in Aldus, in a machine of its own: its files, its tools and its 
 
 ## Two parts, and which you need
 
-1. **The Aldus connector** is what gives your assistant Aldus's tools. You add it once, with one address (`https://askaldus.com/api/mcp`), and sign in to Aldus. It is all you need in Claude on the web, on your desktop and on your phone, and in ChatGPT. Claude Code has it too, as soon as you added it to Claude.
+1. **The Aldus connector** is what gives your assistant Aldus's tools. You add it once, with one address (`https://askaldus.com/api/mcp`), and sign in to Aldus. It is all you need in Claude on the web, on your desktop and on your phone, and in ChatGPT. Claude Code has it too, as soon as you added it to Claude, when it is signed in with the same Claude account.
 2. **This add-on** is for Claude Code and Codex, for whole books: Aldus's own editors and readers, the `/aldus` command, and a pointer to each of Aldus's procedures. In Claude it has **no connector and no sign-in of its own**: it works through the connector you added. In Codex it brings the connector with it.
 
 ## Add the connector
