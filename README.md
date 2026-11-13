@@ -19,7 +19,7 @@ To test it, ask your assistant to list your Aldus books. Settings → Connection
 
 ## Add the add-on to Claude Code
 
-In Claude, on the web or the desktop: **Customize → Plugins → Add → Add marketplace → Add from a repository**, with `lvnr/aldus-plugin`, then add Aldus from it. A plugin added there reaches Claude Code when it is signed in with your Claude account.
+In Claude, on the web or the desktop: **Customize → Plugins → Add → Add marketplace → Add from a repository**, choose `lvnr/aldus-plugin` and **Sync**, then **Add** Aldus from it. A plugin added there reaches Claude Code when it is signed in with your Claude account.
 
 Or in a terminal:
 
@@ -31,7 +31,11 @@ Then type `/aldus` in Claude Code and name one of your books.
 
 ### Keeping it up to date
 
-A plugin installed in a terminal doesn't update by itself. Aldus tells you, in the conversation and in Settings → Connections, when a newer one is out. Then:
+Aldus tells you, in the conversation and in Settings → Connections, when a newer one is out.
+
+Added in Claude: **Customize → Plugins → Add → Manage marketplaces**, then **Check for updates** on `aldus-plugin`. Claude keeps it up to date by itself only when its GitHub App can read the repository and **Sync automatically** is on.
+
+Installed in a terminal, it doesn't update by itself. Then:
 
 ```
 claude plugin update aldus@aldus
