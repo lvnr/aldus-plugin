@@ -14,7 +14,8 @@ The author asked: $ARGUMENTS
 2. **Take the job.**
    - When the author asked for specific work on a book, start it and take it in one go: `take_job` with the book and `start` (research, pilot, write, design, cover_round, publish or update). Their request is the go-ahead for the uses it takes: don't ask again. Pass `unattended: true` when they asked for it without questions.
    - Otherwise take the job that waits for you with `take_job` (on that book when one was named).
-   - When `take_job` refuses (the book paused or busy with Aldus, or no place on the plan for another book in progress), tell the author what it says, in a sentence, and stop.
+   - When `take_job` refuses, its answer says why and who has the job or the book (Aldus, another of the author's assistants, another conversation of yours), with the way on: do what it says, or tell the author what it says, in a sentence, and stop. Never work around a refusal with `start_job` or `run_in_aldus`: those are for when the author asks Aldus to run the work on its own servers, which takes their credits.
+   - When any Aldus tool says the job you took was stopped, or is being done in another conversation, stop working on that book at once and tell the author, in a sentence.
 3. **Do the job** as `take_job`'s answer and Aldus's procedures say: `get_procedure run-aldus` first, then each procedure `take_job` lists, before the steps it covers. Work entirely through the Aldus tools, and finish with `finish_job`. If `finish_job` names a procedure you never read, read it and check the work against it before finishing. When the author asked for more than one stage, take the next stage the same way once one is finished, until the stages they asked for are done.
 4. **Tell the author**, in a line or two, what you did and what waits on them, with the book's address in Aldus where they can see it.
 

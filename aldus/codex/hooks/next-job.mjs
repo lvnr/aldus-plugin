@@ -41,12 +41,71 @@ function tailOf(file) {
   }
 }
 
-/** True when the transcript shows a finished Aldus job since the last next_job answer. */
-export function finishedSinceAsked(text) {
-  const lastMark = Math.max(...MARKS.map((mark) => text.lastIndexOf(mark)));
-  const lastFinish = text.lastIndexOf('finish_job"');
+const TOOL_CALL_ITEMS = new Set(["McpToolCall", "mcp_tool_call"]);
 
-  return lastFinish !== -1 && lastFinish > lastMark;
+/** The Aldus tool a transcript line records as called and answered ("finish_job", "next_job"); null for any other line. */
+function calledTool(line) {
+  // Cheap first: most lines name neither tool.
+  if (!line.includes("finish_job") && !line.includes("next_job")) return null;
+
+  let entry;
+
+  try {
+    entry = JSON.parse(line);
+  } catch {
+    return null;
+  }
+
+  const payload = entry?.payload;
+  const item = payload?.item;
+
+  // A connector tool's call as Codex records it once it is answered, whether the agent called it directly or from a script.
+  if (payload?.type === "item_completed" && item && TOOL_CALL_ITEMS.has(item.type) && typeof item.tool === "string") {
+    if (item.status && item.status !== "completed") return null;
+    if (item.result?.isError === true || item.result?.is_error === true || item.error) return null;
+
+    return item.tool;
+  }
+
+  // A direct function call, as older transcripts record it: the tool's name ends the function's.
+  if (payload?.type === "function_call" && typeof payload.name === "string") {
+    const name = payload.name.split("__").at(-1);
+
+    return name === "finish_job" || name === "next_job" ? name : null;
+  }
+
+  return null;
+}
+
+/**
+ * True when the transcript shows an Aldus job finished (a finish_job call that was answered) since next_job was last
+ * asked. Only the calls themselves count: the tools' names also appear in procedures, in the tools' own descriptions
+ * and in the per-line source notes Codex keeps, and reading those as calls asked for the next job after turns that
+ * finished none (found 12 Nov). A transcript with no call records at all is read by its words, as before.
+ */
+export function finishedSinceAsked(text) {
+  const lines = text.split("\n");
+  let lastFinish = -1;
+  let lastAsked = -1;
+  let records = 0;
+
+  for (const [index, line] of lines.entries()) {
+    if (line.includes('"item_completed"') || line.includes('"function_call"')) records += 1;
+
+    const tool = calledTool(line);
+
+    if (tool === "finish_job") lastFinish = index;
+    else if (tool === "next_job") lastAsked = index;
+  }
+
+  if (records > 0) {
+    return lastFinish !== -1 && lastFinish > lastAsked;
+  }
+
+  const lastMark = Math.max(...MARKS.map((mark) => text.lastIndexOf(mark)));
+  const finished = text.lastIndexOf('finish_job"');
+
+  return finished !== -1 && finished > lastMark;
 }
 
 function main() {
